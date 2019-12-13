@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Me</title>
+        <meta name="keyword" content="portfolio, photograghy, Jonathan Duong, darkturns, web design">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    </head>
+    <body id="main-body">
+      <div class="space"></div>
+      <h3>Jonathan Duong</h3>
+      <h4>Artist, Storyteller, Student</h4>
+      <p>An incurable dreamer, hopeless romantic, unapologetic otaku, and budding storyteller. I am a new transfer student here at Drexel majoring in IDM and minoring in Video Production. My hope is for my images and stories to have, at the very least, a lingering impact on someone, somewhere.    
+      </p>
+      <p>I am trying to add as much value to this world as I can and in the past, I have taken time off school, using it to work through childhood traumas and finding what I am passionate about. I am a self-taught photographer and editor specializing in Lightroom and Photoshop. My photos have garnered over one million impressions on Instagram and I can be found @darkturns.
+      </p>
+    </body>
+    <nav>
+        <ul>
+            <a href="../index.html" class="home">
+                <img src="../graphics/logowhite.png" alt="logo"/>
+            </a>
+        </ul>
+        <ul class="bottom_nav">
+            <li><a href="../src/work.html">Work</a>
+            </li>
+            <li><a href="../src/about_me.html">About</a>
+            </li>
+        </ul>
+    </nav>
+<!-- Slideshow container -->
+<!--Cite: https://www.w3schools.com/w3css/w3css_slideshow.asp-->
+    <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 6</div>
+              <img src="../graphics/about-me-profile1.jpg" style="width:100%">
+              <div class="text">Dumbo, Brookyln</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 6</div>
+              <img src="../graphics/about-me-profile2.jpg" style="width:100%">
+              <div class="text">Effiel Tower, Paris</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 6</div>
+              <img src="../graphics/about-me-profile6.jpg" style="width:100%">
+              <div class="text">Self-portrait</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="../graphics/about-me-profille4.jpg" style="width:100%">
+                <div class="text">Feels like flying</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="../graphics/about-me-profile5.jpg" style="width:100%">
+                <div class="text">Detriot, MI</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="../graphics/about-me-profile3.jpg" style="width:100%">
+                <div class="text">NYC circa 18'</div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <input type="button" onclick="asdf"> 
+            
+            <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    
+        <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 3000); // Change image every 2 seconds
+                }
+        </script>
+            
+<!--Carousel Test-->
+        
+        <!--<div class="card">
+            <img src="/Users/darkturns/Documents/GitHub/IDM-221/graphics/About-me-profile1.jpg" alt="Profile picture" width="600em">
+        </div>
+        <div class="card">
+            <img src="/Users/darkturns/Documents/GitHub/IDM-221/graphics/About-me-profile2.jpg" alt="Profile picture" width="600em">
+        </div>-->
+    </body>
+    <footer> 
+        <div>
+            <p>Copyright &copy; 2019</p>
+        </div>
+        <div class="icon">
+            <a href="https://www.instagram.com/darkturns/" class="instragram-icon">
+                <img src="../graphics/instagram_logo.png" alt="Instagram Logo"/>
+            </a>
+        </div>
+    </footer>
+</html>

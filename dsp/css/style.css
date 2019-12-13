@@ -1,0 +1,467 @@
+@font-face {
+    font-family: 'SpaceMono-Regular';
+    src: url('SpaceMono-Regular.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+*  {
+    box-sizing: border-box;
+}
+a {
+    display: block;
+    padding: 2vw;
+    margin: 10px 0;
+}
+a:hover {
+    background-color: blueviolet;
+}
+body{
+    background-color:#080808;
+    color: aliceblue
+}
+body{
+    font-family: SpaceMono-Regular, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    line-height: 1.4em
+}
+button {
+    align-self: flex-start;
+    display: block;
+    padding: 2vw;
+    font-size: 3vh;
+    background-color: blueviolet;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+div.heading{
+    padding: 1em;
+}
+div.space{
+    height: 8em;
+}
+div.text {
+    margin: 0 0 30px 0;
+}
+div.card {
+    width: 100%;
+    text-align: center;
+}
+div.card img {
+    width: 100%;
+}
+div.icon{
+    margin-right: 5em;
+    float: right;
+}
+footer {
+    line-height: 1.5em;
+    text-align: center;
+    bottom: 0;
+    background: #080808;
+    width: 100%;
+}
+footer table {
+    margin: 0;
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+}
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0 3rem 0;
+}
+h3 {
+    font-size: 4.5rem;
+    text-align: center;
+    margin: 15rem 0 4rem 0;
+}
+h4 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 4.5rem 0 5rem 0;
+}
+li {
+    list-style-type: none;
+    margin: 0 2vw;
+}
+#main-body > nav > ul.bottom_nav {
+    margin: 0 0 20px 229px;
+}
+#main-body > nav > ul > a > img {
+    margin: 0 0 0 58px;
+}
+#main-body > nav > ul:nth-child(1) {
+    margin: 0;
+}
+#main-body > footer > div:nth-child(1) > p {
+    margin: 0;
+}
+#main-body > div.space {
+    margin: 0 0 175px 0;
+}
+#main-body > footer > div.icon {
+    margin: 0px 420px 0px 200px;
+}
+nav {
+    font-size: 4rem;
+    background-color:#080808;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+nav a {
+    text-decoration: none;
+}
+nav li {
+    display: flex;
+}
+p {
+    font-size: 2em;
+    line-height: 1.5em;
+    color: aliceblue;
+    margin: 0 1em 2em 1em;
+}
+.slideshow-container .prev {
+    font-size: 7.5rem;
+    color: blueviolet;
+}
+.slideshow-container .next {
+    font-size: 7.5rem;
+    color: blueviolet;
+}
+span.dot {
+    position: relative;
+    /*bottom: 670px;*/
+}
+table {
+    margin: 0;
+    text-align: center;
+}
+ul {
+    padding: 0;
+    display: flex;
+    margin: 0 0 20px 0;
+}
+/*ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}*/
+/*footer li {
+    display: inline-block;
+}*/
+
+/* this is the css for the carousel */
+/* Cite: https://www.w3schools.com/w3css/w3css_slideshow.asp */
+* {box-sizing:border-box}
+div.text {
+    font-size: 2em;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 1em;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: .5em;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  /*height: 15px;
+  width: 15px;*/
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* this is the css for the carousel */
+
+/* this is the css for the nav
+body {
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #1E1E23;
+    opacity:1;
+    font-family: 'work sans', sans serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    transition: 200ms;
+}
+a:hover {
+    opacity:0.5;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+.container {
+    margin-top: 50px; 
+    Display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phone {
+    background-color: #36383F;
+    border-radius: 40px;
+    width: 300px;
+    height: 600px;
+    Display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 30px 50px 100px #85888C;
+ }
+.content {
+    border: 1px solid #36383F;
+    border-radius: 20px;
+    width: 94%;
+    height: 91%;
+    background-color: #F5F6FA;
+    overflow: hidden;
+}
+nav {
+    background-color: #1E1E23;
+    height: 65px;
+}
+#menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#menuToggle input {
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+#menuToggle span {
+    display: flex;
+    width: 29px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+    background: #36383F;
+}
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+#menu {
+    position: absolute;
+    width: 180px;
+    height: 400px;
+    box-shadow: 0 0 10px #85888C;
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: #F5F6FA;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menu li {
+    padding: 10px 0;
+    transition-delay: 2s;
+}
+#menuToggle input:checked ~ ul {
+    transform: none;
+}
+this is the css for the nav */
+
+/*this is for the card
+.card
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5%;
+}
+.card .front
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+}
+.card:hover .front
+{
+    transform: rotateX(-180deg);
+}
+.card .back
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(95, 95, 95);
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+}
+.card:hover .back
+{
+    transform: rotateX(0deg);
+}
+.card .back .details
+{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.card .back .details h2
+{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #fff;
+}
+.card .back .details h2 span
+{
+    color: #a7a7a7;
+    font-size: 16px;
+}
+.social-icons
+{
+    padding: 10px 0;
+}
+.social-icons
+{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    background: #262626;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: 0.5%;
+}
+end of card*/
