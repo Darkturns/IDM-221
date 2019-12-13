@@ -12,9 +12,9 @@ a {
     padding: 2vw;
     margin: 10px 0;
 }
-a:hover {
+/* a:hover {
     background-color: blueviolet;
-}
+} */
 body {
     background-color:#080808;
     color: aliceblue
@@ -34,15 +34,6 @@ button {
     outline: none;
     cursor: pointer;
 }
-div.heading{
-    padding: 1em;
-}
-div.space{
-    height: 8em;
-}
-div.text {
-    margin: 0 0 30px 0;
-}
 div.card {
     width: 100%;
     text-align: center;
@@ -50,9 +41,18 @@ div.card {
 div.card img {
     width: 100%;
 }
+div.heading{
+    padding: 1em;
+}
 div.icon{
     margin-right: 5em;
     float: right;
+}
+div.space{
+    height: 8em;
+}
+div.text {
+    margin: 0 0 30px 0;
 }
 footer {
     line-height: 1.5em;
@@ -89,6 +89,15 @@ li {
     list-style-type: none;
     margin: 0 2vw;
 }
+#main-body > div.space {
+    margin: 0 0 175px 0;
+}
+#main-body > footer > div.icon {
+    margin: 0px 420px 0px 200px;
+}
+#main-body > footer > div:nth-child(1) > p {
+    margin: 0;
+}
 #main-body > nav > ul.bottom_nav {
     margin: 0 0 20px 229px;
 }
@@ -97,15 +106,6 @@ li {
 }
 #main-body > nav > ul:nth-child(1) {
     margin: 0;
-}
-#main-body > footer > div:nth-child(1) > p {
-    margin: 0;
-}
-#main-body > div.space {
-    margin: 0 0 175px 0;
-}
-#main-body > footer > div.icon {
-    margin: 0px 420px 0px 200px;
 }
 nav {
     font-size: 4rem;
